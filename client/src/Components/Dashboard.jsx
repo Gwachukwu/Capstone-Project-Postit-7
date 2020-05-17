@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import {Link} from 'react-router-dom'
 
 class Dashboard extends Component {
   state = {};
@@ -15,14 +16,16 @@ class Dashboard extends Component {
           <h6 className="ml-4 align-self-center">Logout</h6>
         </header>
         <p className="mt-5">
-          <strong>Create Group</strong> <i class="fa fa-plus-circle"></i>
+          <Link to='/create_group' className="text-dark">
+          <strong>Create Group</strong> <i className="fa fa-plus-circle"></i>
+          </Link>
         </p>
         <div className=""></div>
         <div className="d-flex mt-auto">
-          <p className="align-self-end">
-            <span>&copy;</span> <strong>Settings</strong>
+          <p className="align-self-end d-none d-lg-flex pr-5">
+            <span>&copy;</span> <strong className="ml-2 pr-2">Settings</strong>
           </p>
-          <div className="w-75 ml-auto px-5 pt-2 pb-2 bg-light">
+          <div className="w-75 ml-auto px-5 pt-2 pb-2 bg-light w-100">
            <p><span>Normal</span> <span>Urgent</span> <span>Critical</span></p>
           <div className="input-group">
             <input

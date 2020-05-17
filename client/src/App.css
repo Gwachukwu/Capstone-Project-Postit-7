@@ -1,11 +1,29 @@
 .dashboard-image{
   width: 20%;
 }
+.create-group{
+  height: 4rem;
+}
+.members-dropdown{
+  height: 15rem;
+  overflow-y: auto;
+}
+.add-people{
+  cursor: pointer;
+}
 @media(min-width:750px){
   .dashboard-image{
     width: 5%;
   }
 }
-/* .create-group{
-  width: 10%;
-} */
+@media(max-width:800px){
+   .create-section{
+     width: 100% !important;
+   }
+   .create-group{
+    height: 100% !important;
+  }
+  .add-people{
+    margin: 1rem auto;
+  }
+}
